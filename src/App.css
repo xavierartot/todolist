@@ -2,23 +2,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border: 1px solid royalblue;
-  width: 50%;
   margin: auto;
-}
-.container-tda {
-  width: 100%; 
-  align-items: inherit;
-  border: 0;
 }
 .tda i {
   margin-right: .4em
 }
 ul,li  {
   list-style: none;
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  margin: 0;
 }
 .btn-danger {
   margin-right: 1em;
@@ -31,53 +23,8 @@ ul,li  {
 .text-done  {
   text-decoration: line-through;
 }
-.btn-done {
-  
-}
 .btn-remove {
   margin-right: 1rem;
-}
-.glyphicon-trash{
-  margin-right: 1rem;
-}
-.items {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: .4rem;
-}
-  .items__glyph {
-    margin-right: 1rem;
-  }
-aside {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  /* display: inline-block; */
-  margin-right: 2em;
-}
-.title {
-  
-}
-  .title__list {
-    margin-right: 1rem;
-  }
-.form {
-  display: 'flex';
-  flex-direction: 'row';
-  justify-content: 'center';
-  align-items: 'center';
-}
-.form__input {
-  /*display: flex;*/
-  margin-right: .4em;
-}
-.form__btn {
-  font-size: 1.2em;
-  color: #e9f9ff;
-}
-.form__group {
-  display: flex;
 }
 .counter {
   display: flex;
@@ -86,8 +33,8 @@ aside {
   line-height: 1;
 }
 .counter .badge {
- margin-right: 1em; 
- margin-top: -0.3rem;
+  margin-right: 1em; 
+  margin-top: -0.3rem;
 }
 .badge-total {
   border-radius: 50%;
