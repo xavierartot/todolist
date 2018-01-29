@@ -81,39 +81,39 @@ class AddTodoList extends React.Component {
           <div className="form-group row">
             <label className="col-sm-2 col-form-label">Title</label>
             <div className="col-sm-10">
-              <input 
-                name='todoTitle' 
+              <input
+                name='todoTitle'
                 value={ this.state.todoTitle}
                 onChange={this.handleInputChange}
-                type="text" 
-                className="form-control" 
-                id="todoTitle" 
+                type="text"
+                className="form-control"
+                id="todoTitle"
                 placeholder="todoTitle" />
             </div>
           </div>
           <div className="form-group row">
             <label className="col-sm-2 col-form-label">Responsible</label>
             <div className="col-sm-10">
-              <input 
-                name='todoResponsible' 
+              <input
+                name='todoResponsible'
                 value={ this.state.todoResponsible}
                 onChange={this.handleInputChange}
-                type="text" 
-                className="form-control" 
-                id="todoResponsible" 
+                type="text"
+                className="form-control"
+                id="todoResponsible"
                 placeholder="Responsible" />
             </div>
           </div>
           <div className="form-group row">
             <label className="col-sm-2 col-form-label">Description</label>
             <div className="col-sm-10">
-              <textarea 
-                name='todoDescription' 
+              <textarea
+                name='todoDescription'
                 value={ this.state.todoDescription}
                 onChange={this.handleInputChange}
-                type="text" 
-                className="form-control" 
-                id="todoDescription" 
+                type="text"
+                className="form-control"
+                id="todoDescription"
                 placeholder="Description">
               </textarea>
             </div>
@@ -121,8 +121,8 @@ class AddTodoList extends React.Component {
           <div className="form-group row">
             <label className="col-sm-2 col-form-label">priority</label>
             <div className="col-sm-10">
-              <select 
-                name="todoPriority" 
+              <select
+                name="todoPriority"
                 value={ this.state.todoPriority}
                 onChange={this.handleInputChange}
                 className="form-control ">
@@ -169,7 +169,8 @@ export default class App extends React.Component {
   }
 
   render() {
-    let todoLoop = this.state.todos.map( (todo,index) => {
+    let sortMe = this.state.todos.sort( (a,b) => a.done - b.done)
+    let todoLoop = sortMe.map( (todo,index) => {
       return <li className="list-group-item" key={index}>
         <h4 className="list-group-item-heading">
           {todo.todoTitle} <small><span className="badge badge-info">{todo.todoPriority}</span></small>
@@ -186,11 +187,11 @@ export default class App extends React.Component {
           delete
         </button>
 
-        <button 
-          className={todo.done === true ? 'btn btn-info' : 'btn btn-danger' } 
+        <button
+          className={todo.done === true ? 'btn btn-info' : 'btn btn-danger' }
           onClick={() => this.handleDoneTodo(index)}>
-          { 
-          //is better to a library React Bootstrap 4 to avoid the syntax problem
+          {
+          //is better to use library like React Bootstrap 4 ish and component
             todo.done === true ? [<i className="fa fa-times"></i>, 'undone'] : [<i className="fa fa-thumbs-up"></i>, 'done']
           }
         </button>
