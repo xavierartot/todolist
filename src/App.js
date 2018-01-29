@@ -46,7 +46,7 @@ class AddTodoList extends React.Component {
     event.preventDefault()
     //send the object to parent component with the props  onAddTodo
     this.props.onAddTodo(this.state) 
-    //reinitialize the state
+    //reinitialize the state to empty
     this.setState({
       todoTitle: '',
       todoResponsible: '',
@@ -135,17 +135,11 @@ class AddTodoList extends React.Component {
 export default class App extends React.Component {
   constructor() {
     super();
-    this.state = {
-      todos
-    }
+    this.state = {todos}
   }
   handleRemoveTodo (index) {
-    let todos = this.state.todos.filter( (element, i) => {
-      return index !== i
-    })
-    this.setState({
-      todos
-    });
+    let todos = this.state.todos.filter( (element, i) => index !== i)
+    this.setState({todos});
   }
   handleDoneTodo = (index) => {
     let todos = this.state.todos.map( (element,i) => {
@@ -154,16 +148,11 @@ export default class App extends React.Component {
       } 
       return element
     });
-    this.setState({
-      todos
-    }); 
+    this.setState({todos}); 
   }
   
   handleAddTodo = (todo) => {
-   //console.log(todo);
-   this.setState({
-     todos:  [...this.state.todos, todo]
-   }); 
+   this.setState({todos: [...this.state.todos, todo]})
   }
   
   render() {
@@ -201,19 +190,15 @@ export default class App extends React.Component {
         <hr />
         <div className="row">
           <h4>
-            total count: 
-              <span className="badge badge-info badge-total">{ this.state.todos.length }</span>
+            total count: <span className="badge badge-info badge-total">{ this.state.todos.length }</span>
           </h4>
         </div>
         <div className="row tda">
           <ul className="list-group">
             { todoLoop }
           </ul>
-
         </div>
       </div>
     );
   }
 }
-
-
