@@ -50,7 +50,7 @@ class AddTodoList extends React.Component {
       done            : false
     }
   }
-  handleTodoSumit = (event) => {
+  handleTodoSumit = event => {
     event.preventDefault()
     //send the object to parent component with the props: onAddTodo
     this.props.onAddTodo(this.state) 
@@ -63,7 +63,7 @@ class AddTodoList extends React.Component {
       done            : false
     });
   }
-  handleInputChange = (e) => {
+  handleInputChange = e => {
     let {type, name, value} = e.target
     this.setState({
       [name]: value
@@ -150,20 +150,20 @@ export default class App extends React.Component {
     let todos = this.state.todos.filter( (e, i) => index !== i)
     this.setState({todos});
   }
-  handleDoneTodo = (index) => {
+  handleDoneTodo = index => {
     let todos = this.state.todos.map( (element,i) => {
       if (i === index) {
         element.done = !element.done
-      } 
+      }
       return element
     });
-    this.setState({todos}); 
+    this.setState({todos});
   }
-  
-  handleAddTodo = (todo) => {
+
+  handleAddTodo = todo => {
    this.setState({todos: [...this.state.todos, todo]})
   }
-  
+
   render() {
     let todoLoop = this.state.todos.map( (todo,index) => {
       return <li className="list-group-item" key={index}>
