@@ -44,9 +44,9 @@ class AddTodoList extends React.Component {
   }
   handleTodoSumit = (event) => {
     event.preventDefault()
-    //send the object to parent component with the props  onAddTodo
+    //send the object to parent component with the props: onAddTodo
     this.props.onAddTodo(this.state) 
-    //reinitialize the state to empty
+    //re-initialize the state
     this.setState({
       todoTitle: '',
       todoResponsible: '',
@@ -56,11 +56,9 @@ class AddTodoList extends React.Component {
     });
   }
   handleInputChange = (e) => {
-   let nameProperty = e.target.name 
-   let val =  e.target.value
-    console.log(nameProperty, val);
+    let {type, name, value} = e.target
     this.setState({
-      [nameProperty]: val
+      [name]: value
     });
   }
   render() {
