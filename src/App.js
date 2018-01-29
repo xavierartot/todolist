@@ -3,21 +3,21 @@ import './App.css';
 
 const todos = [
   {
-    todoTitle: 'first1',
+    todoTitle: 'first 🤟',
     todoResponsible: 'Xavier',
     todoDescription: 'My first step',
     todoPriority: 'low',
     done : false
   },
   {
-    todoTitle: 'first2',
+    todoTitle: 'first 💫 ',
     todoResponsible: 'Maximilien',
     todoDescription: 'My secon step',
     todoPriority: 'medium',
     done : false
   },
   {
-    todoTitle: 'first3',
+    todoTitle: 'first3 🔥',
     todoResponsible: 'Joann',
     todoDescription: 'My third step',
     todoPriority: 'high',
