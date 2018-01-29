@@ -89,3 +89,8 @@ aside {
  margin-right: 1em; 
  margin-top: -0.3rem;
 }
+.badge-total {
+  border-radius: 50%;
+  margin-left: .4em;
+
+}

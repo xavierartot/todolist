@@ -195,7 +195,7 @@ export default class App extends React.Component {
         <div className="row">
           <h4>
             total count: 
-              <span className="badge badge-info">{ this.state.todos.length }</span>
+              <span className="badge badge-info badge-total">{ this.state.todos.length }</span>
           </h4>
         </div>
         <div className="row tda">
