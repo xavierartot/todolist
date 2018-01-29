@@ -3,23 +3,30 @@ import './App.css';
 
 const todos = [
   {
-    todoTitle: 'first 🤟',
+    todoTitle: 'first step 🤟',
     todoResponsible: 'Xavier',
-    todoDescription: 'My first step',
+    todoDescription: 'My first step with React in very cool environment',
     todoPriority: 'low',
     done : false
   },
   {
-    todoTitle: 'first 💫 ',
+    todoTitle: 'Mastering ES6 💫 ',
     todoResponsible: 'Maximilien',
-    todoDescription: 'My secon step',
+    todoDescription: 'Promise, Destructure, Rest and Spread',
     todoPriority: 'medium',
     done : false
   },
   {
-    todoTitle: 'first3 🔥',
+    todoTitle: 'Learn Redux 🔥',
     todoResponsible: 'Joann',
-    todoDescription: 'My third step',
+    todoDescription: 'Manage the State, accurate?',
+    todoPriority: 'high',
+    done : false
+  },
+  {
+    todoTitle: 'Learn... never stop to run ⚽️',
+    todoResponsible: 'Xavier',
+    todoDescription: 'Animation (React Motion), React Native, Firebase  (React Motion)',
     todoPriority: 'high',
     done : false
   }
