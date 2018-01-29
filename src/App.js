@@ -3,31 +3,46 @@ import './App.css';
 
 const todos = [
   {
-    todoTitle: 'first step 🤟',
-    todoResponsible: 'Xavier',
-    todoDescription: 'My first step with React in very cool environment',
-    todoPriority: 'low',
+    todoTitle: `first step 🤟`,
+    todoResponsible: `Xavier And Joann`,
+    todoDescription: `My first step with React in very cool environment`,
+    todoPriority: `High`,
     done : false
   },
   {
-    todoTitle: 'Mastering ES6 💫 ',
-    todoResponsible: 'Maximilien',
-    todoDescription: 'Promise, Destructure, Rest and Spread',
-    todoPriority: 'medium',
+    todoTitle: `Mastering ES6 💫 `,
+    todoResponsible: `Xavier and Maxim`,
+    todoDescription: `Promises, Destructure, 
+    Rest and Spread, 
+    Scoping, 
+    Template strings with function,
+    for of and not for in,
+    ES6 Tooling, Generator for Ajax flow Control
+    looping Generator`,
+    todoPriority: `medium`,
     done : false
   },
   {
-    todoTitle: 'Learn Redux 🔥',
-    todoResponsible: 'Joann',
-    todoDescription: 'Manage the State, accurate?',
-    todoPriority: 'high',
+    todoTitle: `Learn Redux 🔥`,
+    todoResponsible: `Xavier`,
+    todoDescription: `Manage the State, accurate?`,
+    todoPriority: `medium`,
     done : false
   },
   {
-    todoTitle: 'Learn... never stop to run ⚽️',
-    todoResponsible: 'Xavier',
-    todoDescription: 'Animation (React Motion), React Native, Firebase  (React Motion)',
-    todoPriority: 'high',
+    todoTitle: `Learn... never stop to run ⚽️`,
+    todoResponsible: `Xavier`,
+    todoDescription: `Animation (React Motion), React Native, Firebase`,
+    todoPriority: `high`,
+    done : false
+  },
+  {
+    todoTitle: `Vim with React ♽`,
+    todoResponsible: `Xavier`,
+    todoDescription: `Code Quality with ESLint, 
+    configure the dot .eslint 
+     and setup Airbnb linting`,
+    todoPriority: `high`,
     done : false
   }
 ];
@@ -114,9 +129,11 @@ class AddTodoList extends React.Component {
                 value={ this.state.todoPriority}
                 onChange={this.handleInputChange}
                 className="form-control ">
+              <option>lowest</option>
               <option>low</option>
               <option>medium</option>
               <option>high</option>
+              <option>highest</option>
             </select>
             </div>
           </div>
