@@ -64,6 +64,7 @@ class AddTodoList extends React.Component {
   render() {
     return (
       <div>
+        <h3 className="title text-primary bg-light text-center mb-3 mt-3">Frontend Developer - To Do List </h3>
         <form onSubmit={this.handleTodoSumit}>
           <div className="form-group row">
             <label className="col-sm-2 col-form-label">Title</label>
