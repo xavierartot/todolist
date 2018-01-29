@@ -1,47 +1,47 @@
 import React from 'react';
 import './App.css';
-import todos from './model';
+//import todos from './model';
 //MVC
 
 //Model
-//const todos = [
-  //{
-    //todoTitle         : `first step 🤟`,
-    //todoResponsible   : `Xavier And Joann`,
-    //todoDescription   : `My first step with React in very cool environment`,
-    //todoPriority      : `High`,
-    //done              : true
-  //},
-  //{
-    //todoTitle         : `Mastering ES6 💫 `,
-    //todoResponsible   : `Xavier and Maxim`,
-    //todoDescription   : `Promises, Destructure, Rest and Spread, Scoping, Template strings with function,
-    //for of and not for in, ES6 Tooling, Generator for Ajax flow Control looping Generator`,
-    //todoPriority      : `medium`,
-    //done              : false
-  //},
-  //{
-    //todoTitle         : `Learn Redux 🔥`,
-    //todoResponsible   : `Xavier`,
-    //todoDescription   : `Manage the State, accurate?`,
-    //todoPriority      : `medium`,
-    //done              : false
-  //},
-  //{
-    //todoTitle         : `Learn... never stop to run ⚽️`,
-    //todoResponsible   : `Xavier`,
-    //todoDescription   : `Animation (React Motion), React Native, Firebase`,
-    //todoPriority      : `high`,
-    //done              : true
-  //},
-  //{
-    //todoTitle         : `Vim with React ♽`,
-    //todoResponsible   : `Xavier`,
-    //todoDescription   : `Code Quality with ESLint, configure the dot .eslint and setup Airbnb linting`,
-    //todoPriority      : `high`,
-    //done              : true
-  //}
-//];
+const todos = [
+  {
+    todoTitle         : `first step 🤟`,
+    todoResponsible   : `Xavier And Joann`,
+    todoDescription   : `My first step with React in very cool environment`,
+    todoPriority      : `High`,
+    done              : true
+  },
+  {
+    todoTitle         : `Mastering ES6 💫 `,
+    todoResponsible   : `Xavier and Maxim`,
+    todoDescription   : `Promises, Destructure, Rest and Spread, Scoping, Template strings with function,
+    for of and not for in, ES6 Tooling, Generator for Ajax flow Control looping Generator`,
+    todoPriority      : `medium`,
+    done              : false
+  },
+  {
+    todoTitle         : `Learn Redux 🔥`,
+    todoResponsible   : `Xavier`,
+    todoDescription   : `Manage the State, accurate?`,
+    todoPriority      : `medium`,
+    done              : false
+  },
+  {
+    todoTitle         : `Learn... never stop to run ⚽️`,
+    todoResponsible   : `Xavier`,
+    todoDescription   : `Animation (React Motion), React Native, Firebase`,
+    todoPriority      : `high`,
+    done              : true
+  },
+  {
+    todoTitle         : `Vim with React ♽`,
+    todoResponsible   : `Xavier`,
+    todoDescription   : `Code Quality with ESLint, configure the dot .eslint and setup Airbnb linting`,
+    todoPriority      : `high`,
+    done              : true
+  }
+];
 class AddTodoList extends React.Component {
   //Controller
   constructor() {
