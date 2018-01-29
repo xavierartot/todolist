@@ -1,4 +1,4 @@
-const Todos = [
+const todos = [
   {
     todoTitle         : `first step 🤟`,
     todoResponsible   : `Xavier And Joann`,
@@ -36,4 +36,4 @@ const Todos = [
     done              : true
   }
 ];
-export default Todos;
+export default todos;
