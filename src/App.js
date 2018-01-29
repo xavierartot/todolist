@@ -3,58 +3,51 @@ import './App.css';
 
 const todos = [
   {
-    todoTitle: `first step 🤟`,
-    todoResponsible: `Xavier And Joann`,
-    todoDescription: `My first step with React in very cool environment`,
-    todoPriority: `High`,
-    done : false
+    todoTitle       : `first step 🤟`,
+    todoResponsible : `Xavier And Joann`,
+    todoDescription : `My first step with React in very cool environment`,
+    todoPriority    : `High`,
+    done            : false
   },
   {
-    todoTitle: `Mastering ES6 💫 `,
-    todoResponsible: `Xavier and Maxim`,
-    todoDescription: `Promises, Destructure, 
-    Rest and Spread, 
-    Scoping, 
-    Template strings with function,
-    for of and not for in,
-    ES6 Tooling, Generator for Ajax flow Control
-    looping Generator`,
-    todoPriority: `medium`,
-    done : false
+    todoTitle         : `Mastering ES6 💫 `,
+    todoResponsible   : `Xavier and Maxim`,
+    todoDescription   : `Promises, Destructure, Rest and Spread, Scoping, Template strings with function,
+    for of and not for in, ES6 Tooling, Generator for Ajax flow Control looping Generator`,
+    todoPriority      : `medium`,
+    done              : false
   },
   {
-    todoTitle: `Learn Redux 🔥`,
-    todoResponsible: `Xavier`,
-    todoDescription: `Manage the State, accurate?`,
-    todoPriority: `medium`,
-    done : false
+    todoTitle         : `Learn Redux 🔥`,
+    todoResponsible   : `Xavier`,
+    todoDescription   : `Manage the State, accurate?`,
+    todoPriority      : `medium`,
+    done              : false
   },
   {
-    todoTitle: `Learn... never stop to run ⚽️`,
-    todoResponsible: `Xavier`,
-    todoDescription: `Animation (React Motion), React Native, Firebase`,
-    todoPriority: `high`,
-    done : false
+    todoTitle         : `Learn... never stop to run ⚽️`,
+    todoResponsible   : `Xavier`,
+    todoDescription   : `Animation (React Motion), React Native, Firebase`,
+    todoPriority      : `high`,
+    done              : false
   },
   {
-    todoTitle: `Vim with React ♽`,
-    todoResponsible: `Xavier`,
-    todoDescription: `Code Quality with ESLint, 
-    configure the dot .eslint 
-     and setup Airbnb linting`,
-    todoPriority: `high`,
-    done : false
+    todoTitle         : `Vim with React ♽`,
+    todoResponsible   : `Xavier`,
+    todoDescription   : `Code Quality with ESLint, configure the dot .eslint and setup Airbnb linting`,
+    todoPriority      : `high`,
+    done              : false
   }
 ];
 class AddTodoList extends React.Component {
   constructor() {
     super();
     this.state = {
-      todoTitle: '',
-      todoResponsible: '',
-      todoDescription: '',
-      todoPriority: 'low',
-      done : false
+      todoTitle       : '',
+      todoResponsible : '',
+      todoDescription : '',
+      todoPriority    : 'low',
+      done            : false
     }
   }
   handleTodoSumit = (event) => {
@@ -63,11 +56,11 @@ class AddTodoList extends React.Component {
     this.props.onAddTodo(this.state) 
     //re-initialize the state
     this.setState({
-      todoTitle: '',
-      todoResponsible: '',
-      todoDescription: '',
-      todoPriority: 'low',
-      done : false
+      todoTitle       : '',
+      todoResponsible : '',
+      todoDescription : '',
+      todoPriority    : 'low',
+      done            : false
     });
   }
   handleInputChange = (e) => {
