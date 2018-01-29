@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
+//MVC
 
+//Model
 const todos = [
   {
     todoTitle         : `first step 🤟`,
     todoResponsible   : `Xavier And Joann`,
     todoDescription   : `My first step with React in very cool environment`,
     todoPriority      : `High`,
-    done              : false
+    done              : true
   },
   {
     todoTitle         : `Mastering ES6 💫 `,
@@ -29,17 +31,18 @@ const todos = [
     todoResponsible   : `Xavier`,
     todoDescription   : `Animation (React Motion), React Native, Firebase`,
     todoPriority      : `high`,
-    done              : false
+    done              : true
   },
   {
     todoTitle         : `Vim with React ♽`,
     todoResponsible   : `Xavier`,
     todoDescription   : `Code Quality with ESLint, configure the dot .eslint and setup Airbnb linting`,
     todoPriority      : `high`,
-    done              : false
+    done              : true
   }
 ];
 class AddTodoList extends React.Component {
+  //Controller
   constructor() {
     super();
     this.state = {
@@ -69,6 +72,7 @@ class AddTodoList extends React.Component {
       [name]: value
     });
   }
+  //Vue
   render() {
     return (
       <div>
