@@ -3,11 +3,11 @@ import './App.css';
 
 const todos = [
   {
-    todoTitle       : `first step 🤟`,
-    todoResponsible : `Xavier And Joann`,
-    todoDescription : `My first step with React in very cool environment`,
-    todoPriority    : `High`,
-    done            : false
+    todoTitle         : `first step 🤟`,
+    todoResponsible   : `Xavier And Joann`,
+    todoDescription   : `My first step with React in very cool environment`,
+    todoPriority      : `High`,
+    done              : false
   },
   {
     todoTitle         : `Mastering ES6 💫 `,
