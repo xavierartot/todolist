@@ -112,7 +112,7 @@ class AddTodoList extends React.Component {
               <select 
                 name="todoPriority" 
                 value={ this.state.todoPriority}
-                onChange={this.handleInputChange}>
+                onChange={this.handleInputChange}
                 className="form-control ">
               <option>low</option>
               <option>medium</option>
@@ -137,7 +137,7 @@ export default class App extends React.Component {
     this.state = {todos}
   }
   handleRemoveTodo (index) {
-    let todos = this.state.todos.filter( (element, i) => index !== i)
+    let todos = this.state.todos.filter( (e, i) => index !== i)
     this.setState({todos});
   }
   handleDoneTodo = (index) => {
