@@ -68,7 +68,8 @@ class AddTodoList extends React.Component {
     });
   }
   handleInputChange = e => {
-    let {name, value} = e.target //object
+    console.log(e.target);
+    let {name, value} = e.target //target is an object
     this.setState({
       [name]: value
     });
@@ -170,10 +171,12 @@ export default class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.todos);
-    let sortMe = this.state.todos.sort( (a,b) => a.done - b.done)
-    let todoLoop = sortMe.map( (todo,index) => {
-      return <li className="list-group-item" key={index}>
+    let sortMe = this.state.todos.sort( (a,b) => a.done - b.done),
+    todoLoop = sortMe.map( (todo,index) => {
+      return <li 
+        className="list-group-item" 
+        key={index} 
+        style={todo.done === true ? {'color':'#afafaf'} : {'color':'#000'} }>
         <h4 className="list-group-item-heading">
           {todo.todoTitle} <small><span className="badge badge-info">{todo.todoPriority}</span></small>
         </h4>
