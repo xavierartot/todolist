@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-//import todos from './model';
+//import firebase from './firebase'; 
 //MVC
 
 //Model
